@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9fd2ea"/>
+      <stop offset="1" stop-color="#5c8396"/>
+    </linearGradient></defs>
+    <rect width="600" height="600" fill="url(#g)"/>
+    <g><path d="M 299.6 360.0 A 60 60 0 0 1 358.0 284.8" fill="none" stroke="#219ebc" stroke-width="10.6" opacity="0.75" stroke-linecap="round"/><path d="M 379.4 364.0 A 102 102 0 0 1 209.9 347.7" fill="none" stroke="#219ebc" stroke-width="17.5" opacity="0.93" stroke-linecap="round"/><path d="M 306.6 443.8 A 144 144 0 0 1 165.5 248.4" fill="none" stroke="#219ebc" stroke-width="21.5" opacity="0.90" stroke-linecap="round"/><path d="M 210.3 137.1 A 186 186 0 0 1 161.7 424.4" fill="none" stroke="#219ebc" stroke-width="19.6" opacity="0.69" stroke-linecap="round"/><path d="M 527.4 317.0 A 228 228 0 0 1 255.2 523.6" fill="none" stroke="#219ebc" stroke-width="12.3" opacity="0.81" stroke-linecap="round"/><path d="M 62.5 428.5 A 270 270 0 0 1 157.5 70.7" fill="none" stroke="#219ebc" stroke-width="20.1" opacity="0.70" stroke-linecap="round"/><path d="M 66.2 506.6 A 312 312 0 0 1 228.5 -3.7" fill="none" stroke="#219ebc" stroke-width="12.9" opacity="0.80" stroke-linecap="round"/><path d="M 1.4 490.1 A 354 354 0 0 1 198.9 -39.3" fill="none" stroke="#219ebc" stroke-width="8.6" opacity="0.87" stroke-linecap="round"/></g>
+    <rect x="0" y="0" width="600" height="600" fill="none" stroke="rgba(245,239,228,0.25)" stroke-width="3"/>
+    <text x="300" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="47.77777777777778" fill="#f5efe4" letter-spacing="1">SILK ROAD</text>
+      <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">NUSRAT ENSEMBLE</text>
+  </svg>

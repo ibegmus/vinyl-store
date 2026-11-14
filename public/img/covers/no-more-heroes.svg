@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ea5762"/>
+      <stop offset="1" stop-color="#96252e"/>
+    </linearGradient></defs>
+    <rect width="600" height="600" fill="url(#g)"/>
+    <g><path d="M 240.4 293.1 A 60 60 0 0 1 350.1 333.0" fill="none" stroke="#1d3557" stroke-width="15.2" opacity="0.72" stroke-linecap="round"/><path d="M 219.7 362.9 A 102 102 0 0 1 317.6 199.5" fill="none" stroke="#1d3557" stroke-width="10.8" opacity="0.76" stroke-linecap="round"/><path d="M 433.8 353.3 A 144 144 0 0 1 251.9 164.3" fill="none" stroke="#1d3557" stroke-width="20.8" opacity="0.80" stroke-linecap="round"/><path d="M 467.1 218.2 A 186 186 0 0 1 139.5 206.0" fill="none" stroke="#1d3557" stroke-width="16.8" opacity="0.66" stroke-linecap="round"/><path d="M 74.7 265.0 A 228 228 0 0 1 510.7 212.8" fill="none" stroke="#1d3557" stroke-width="13.9" opacity="0.88" stroke-linecap="round"/><path d="M 252.3 34.2 A 270 270 0 0 1 55.9 415.4" fill="none" stroke="#1d3557" stroke-width="13.9" opacity="0.82" stroke-linecap="round"/><path d="M 189.1 591.6 A 312 312 0 0 1 611.8 311.5" fill="none" stroke="#1d3557" stroke-width="15.3" opacity="0.77" stroke-linecap="round"/><path d="M 653.7 314.9 A 354 354 0 0 1 138.0 614.7" fill="none" stroke="#1d3557" stroke-width="14.2" opacity="0.66" stroke-linecap="round"/></g>
+    <rect x="0" y="0" width="600" height="600" fill="none" stroke="rgba(245,239,228,0.25)" stroke-width="3"/>
+    <text x="300" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30.714285714285715" fill="#f5efe4" letter-spacing="1">NO MORE HEROES</text>
+      <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">THE STRUTS</text>
+  </svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f84697"/>
+      <stop offset="1" stop-color="#a11856"/>
+    </linearGradient></defs>
+    <rect width="600" height="600" fill="url(#g)"/>
+    <g transform="rotate(90 300 300)">
+        <rect x="61.82632962241769" y="61.82632962241769" width="476.3473407551646" height="476.3473407551646" fill="none" stroke="#4cc9f0" stroke-width="4"/>
+        <rect x="91.82632962241769" y="91.82632962241769" width="416.3473407551646" height="416.3473407551646" fill="#4cc9f0" opacity="0.85"/>
+      </g>
+      <circle cx="126.02909725159407" cy="209.5468325726688" r="45.26833588583395" fill="#4cc9f0"/>
+    <rect x="0" y="0" width="600" height="600" fill="none" stroke="rgba(245,239,228,0.25)" stroke-width="3"/>
+    <text x="300" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="33.07692307692308" fill="#f5efe4" letter-spacing="1">DISCO FOREVER</text>
+      <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">STUDIO 54 ALLSTARS</text>
+  </svg>

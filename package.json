@@ -1,0 +1,17 @@
+{
+  "name": "rechords-vinyl-store",
+  "version": "1.0.0",
+  "description": "Магазин виниловых пластинок RECHORDS — Node.js (Express) + SQLite + Fetch API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "covers": "node scripts/generate-covers.js"
+  },
+  "keywords": ["vinyl", "express", "sqlite", "ajax", "fetch-api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.21.2"
+  }
+}

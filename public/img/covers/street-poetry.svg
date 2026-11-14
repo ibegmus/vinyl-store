@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd87d"/>
+      <stop offset="1" stop-color="#a68842"/>
+    </linearGradient></defs>
+    <rect width="600" height="600" fill="url(#g)"/>
+    <g transform="rotate(180 300 300)">
+        <rect x="78.93640235997736" y="78.93640235997736" width="442.12719528004527" height="442.12719528004527" fill="none" stroke="#ef476f" stroke-width="4"/>
+        <rect x="108.93640235997736" y="108.93640235997736" width="382.12719528004527" height="382.12719528004527" fill="#ef476f" opacity="0.85"/>
+      </g>
+      <circle cx="371.7737150005996" cy="191.22477184049785" r="52.44972136709839" fill="#ef476f"/>
+    <rect x="0" y="0" width="600" height="600" fill="none" stroke="rgba(245,239,228,0.25)" stroke-width="3"/>
+    <text x="300" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="33.07692307692308" fill="#f5efe4" letter-spacing="1">STREET POETRY</text>
+      <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">MC VERSE</text>
+  </svg>
