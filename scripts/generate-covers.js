@@ -145,6 +145,35 @@ function pattern(kind, rand, c1, c2, accent) {
   }
 }
 
+function heroVinylSVG() {
+  let grooves = '';
+  for (let r = 150; r <= 430; r += 6) {
+    const w = r % 24 === 0 ? 0.06 : 0.02;
+    grooves += `<circle cx="450" cy="450" r="${r}" fill="none" stroke="rgba(255,255,255,${w})" stroke-width="2"/>`;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+    <defs>
+      <radialGradient id="disc" cx="0.35" cy="0.3" r="1">
+        <stop offset="0" stop-color="#2b2b2b"/>
+        <stop offset="0.55" stop-color="#111111"/>
+        <stop offset="1" stop-color="#050505"/>
+      </radialGradient>
+      <linearGradient id="label" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f7efdd"/>
+        <stop offset="1" stop-color="#e6d5b6"/>
+      </linearGradient>
+    </defs>
+    <circle cx="450" cy="450" r="450" fill="url(#disc)"/>
+    ${grooves}
+    <path d="M 80 320 A 420 420 0 0 1 380 60" stroke="rgba(255,255,255,0.10)" stroke-width="46" fill="none" stroke-linecap="round"/>
+    <circle cx="450" cy="450" r="152" fill="url(#label)"/>
+    <circle cx="450" cy="450" r="152" fill="none" stroke="rgba(0,0,0,0.25)" stroke-width="5"/>
+    <circle cx="450" cy="450" r="17" fill="#16130f"/>
+    <text x="450" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" letter-spacing="7" fill="#16130f">RECHORDS</text>
+    <text x="450" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="3" fill="rgba(22,19,15,0.6)">33⅓ RPM · STEREO</text>
+  </svg>`;
+}
+
 function coverSVG(title, artist, c1, c2, seedStr) {
   const rand = rng(hash(seedStr));
   const kind = ['sun', 'stripes', 'waves', 'grid', 'arcs', 'split'][Math.floor(rand() * 6)];
@@ -195,6 +224,10 @@ async function buildPlaceholders() {
   return manifest.length;
 }
 
-buildPlaceholders().then(n => {
+async function buildHero() {
+  await sharp(Buffer.from(heroVinylSVG())).resize(900, 900).png().toFile(path.join(__dirname, '..', 'public', 'plastinka.png'));
+}
+
+Promise.all([buildPlaceholders(), buildHero()]).then(([n]) => {
   console.log(`Covers generated: ${genres.length + categories.length + albums.length} svg, ${n} jpg placeholders`);
 });
