@@ -26,7 +26,7 @@ function mapAlbum(row) {
     status: row.status,
     rating: row.rating,
     sold: row.sold,
-    cover: `/img/covers/${row.slug}.svg`,
+    cover: `/img/albums/${row.id}.jpg`,
     genre: row.genre_name,
     genreSlug: row.genre_slug
   };

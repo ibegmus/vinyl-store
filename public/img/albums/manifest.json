@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "file": "/img/albums/1.jpg",
+    "slug": "midnight-frequency",
+    "title": "Midnight Frequency",
+    "artist": "Neon District"
+  },
+  {
+    "id": 2,
+    "file": "/img/albums/2.jpg",
+    "slug": "orange-county",
+    "title": "Orange County",
+    "artist": "The Paper Planes"
+  },
+  {
+    "id": 3,
+    "file": "/img/albums/3.jpg",
+    "slug": "velvet-static",
+    "title": "Velvet Static",
+    "artist": "Mira Cole"
+  },
+  {
+    "id": 4,
+    "file": "/img/albums/4.jpg",
+    "slug": "desert-rose",
+    "title": "Desert Rose",
+    "artist": "Sahara Sons"
+  },
+  {
+    "id": 5,
+    "file": "/img/albums/5.jpg",
+    "slug": "neon-boulevard",
+    "title": "Neon Boulevard",
+    "artist": "Cassette Club"
+  },
+  {
+    "id": 6,
+    "file": "/img/albums/6.jpg",
+    "slug": "golden-hour-live",
+    "title": "Golden Hour (Live)",
+    "artist": "The Faders"
+  },
+  {
+    "id": 7,
+    "file": "/img/albums/7.jpg",
+    "slug": "purple-haze-revisited",
+    "title": "Purple Haze Revisited",
+    "artist": "Ivy Jenkins"
+  },
+  {
+    "id": 8,
+    "file": "/img/albums/8.jpg",
+    "slug": "street-poetry",
+    "title": "Street Poetry",
+    "artist": "MC Verse"
+  },
+  {
+    "id": 9,
+    "file": "/img/albums/9.jpg",
+    "slug": "blue-in-green",
+    "title": "Blue in Green",
+    "artist": "Ella Moreau Trio"
+  },
+  {
+    "id": 10,
+    "file": "/img/albums/10.jpg",
+    "slug": "static-bloom",
+    "title": "Static Bloom",
+    "artist": "The Faders"
+  },
+  {
+    "id": 11,
+    "file": "/img/albums/11.jpg",
+    "slug": "machine-dreams",
+    "title": "Machine Dreams",
+    "artist": "Kraftwerk Legacy"
+  },
+  {
+    "id": 12,
+    "file": "/img/albums/12.jpg",
+    "slug": "rust-and-gold",
+    "title": "Rust & Gold",
+    "artist": "The Hollow Pines"
+  },
+  {
+    "id": 13,
+    "file": "/img/albums/13.jpg",
+    "slug": "chromatic",
+    "title": "Chromatic",
+    "artist": "Polyphia Project"
+  },
+  {
+    "id": 14,
+    "file": "/img/albums/14.jpg",
+    "slug": "no-more-heroes",
+    "title": "No More Heroes",
+    "artist": "The Struts"
+  },
+  {
+    "id": 15,
+    "file": "/img/albums/15.jpg",
+    "slug": "quiet-fire",
+    "title": "Quiet Fire",
+    "artist": "Nina Simone Tribute"
+  },
+  {
+    "id": 16,
+    "file": "/img/albums/16.jpg",
+    "slug": "wandering-star",
+    "title": "Wandering Star",
+    "artist": "Astra Khan"
+  },
+  {
+    "id": 17,
+    "file": "/img/albums/17.jpg",
+    "slug": "roots-and-culture",
+    "title": "Roots & Culture",
+    "artist": "Jah Mason"
+  },
+  {
+    "id": 18,
+    "file": "/img/albums/18.jpg",
+    "slug": "flower-child",
+    "title": "Flower Child",
+    "artist": "The Daisy Chain"
+  },
+  {
+    "id": 19,
+    "file": "/img/albums/19.jpg",
+    "slug": "paper-moon",
+    "title": "Paper Moon",
+    "artist": "Lola & The Lights"
+  },
+  {
+    "id": 20,
+    "file": "/img/albums/20.jpg",
+    "slug": "be-bop-classics",
+    "title": "Be Bop Classics",
+    "artist": "Charlie Parker Ensemble"
+  },
+  {
+    "id": 21,
+    "file": "/img/albums/21.jpg",
+    "slug": "funk-machine",
+    "title": "Funk Machine",
+    "artist": "The Groove Council"
+  },
+  {
+    "id": 22,
+    "file": "/img/albums/22.jpg",
+    "slug": "spider-babies",
+    "title": "Spider Babies",
+    "artist": "The Cramps Legacy"
+  },
+  {
+    "id": 23,
+    "file": "/img/albums/23.jpg",
+    "slug": "silk-road",
+    "title": "Silk Road",
+    "artist": "Nusrat Ensemble"
+  },
+  {
+    "id": 24,
+    "file": "/img/albums/24.jpg",
+    "slug": "motown-gold",
+    "title": "Motown Gold",
+    "artist": "Various Artists"
+  },
+  {
+    "id": 25,
+    "file": "/img/albums/25.jpg",
+    "slug": "krautrock-vol-1",
+    "title": "Krautrock Vol. 1",
+    "artist": "Neu! Inspired"
+  },
+  {
+    "id": 26,
+    "file": "/img/albums/26.jpg",
+    "slug": "dub-plates",
+    "title": "Dub Plates",
+    "artist": "King Tubby Sound"
+  },
+  {
+    "id": 27,
+    "file": "/img/albums/27.jpg",
+    "slug": "lo-fi-beauty",
+    "title": "Lo-Fi Beauty",
+    "artist": "Bedroom Producer"
+  },
+  {
+    "id": 28,
+    "file": "/img/albums/28.jpg",
+    "slug": "cosmic-traveller",
+    "title": "Cosmic Traveller",
+    "artist": "Sun Ra Arkestra"
+  },
+  {
+    "id": 29,
+    "file": "/img/albums/29.jpg",
+    "slug": "grunge-years",
+    "title": "Grunge Years",
+    "artist": "Seattle Sound"
+  },
+  {
+    "id": 30,
+    "file": "/img/albums/30.jpg",
+    "slug": "shibuya-nights",
+    "title": "Shibuya Nights",
+    "artist": "Tokyo Metro"
+  },
+  {
+    "id": 31,
+    "file": "/img/albums/31.jpg",
+    "slug": "orchard-road",
+    "title": "Orchard Road",
+    "artist": "The Kooks Field"
+  },
+  {
+    "id": 32,
+    "file": "/img/albums/32.jpg",
+    "slug": "blues-before-sunrise",
+    "title": "Blues Before Sunrise",
+    "artist": "Robert Johnson Revival"
+  },
+  {
+    "id": 33,
+    "file": "/img/albums/33.jpg",
+    "slug": "psychedelic-woman",
+    "title": "Psychedelic Woman",
+    "artist": "Fela Kuti Global"
+  },
+  {
+    "id": 34,
+    "file": "/img/albums/34.jpg",
+    "slug": "yacht-rock",
+    "title": "Yacht Rock",
+    "artist": "Smooth Sailors"
+  },
+  {
+    "id": 35,
+    "file": "/img/albums/35.jpg",
+    "slug": "riot-city",
+    "title": "Riot City",
+    "artist": "The Clash Tribute Band"
+  },
+  {
+    "id": 36,
+    "file": "/img/albums/36.jpg",
+    "slug": "rainy-day-jazz",
+    "title": "Rainy Day Jazz",
+    "artist": "Bill Evans Homage"
+  },
+  {
+    "id": 37,
+    "file": "/img/albums/37.jpg",
+    "slug": "highland-fling",
+    "title": "Highland Fling",
+    "artist": "Celtic Storm"
+  },
+  {
+    "id": 38,
+    "file": "/img/albums/38.jpg",
+    "slug": "chrome-age",
+    "title": "Chrome Age",
+    "artist": "Futurecop"
+  },
+  {
+    "id": 39,
+    "file": "/img/albums/39.jpg",
+    "slug": "summer-of-love",
+    "title": "Summer of Love",
+    "artist": "Fifty Years On"
+  },
+  {
+    "id": 40,
+    "file": "/img/albums/40.jpg",
+    "slug": "bluegrass-mornings",
+    "title": "Bluegrass Mornings",
+    "artist": "Appalachian Dawn"
+  },
+  {
+    "id": 41,
+    "file": "/img/albums/41.jpg",
+    "slug": "disco-forever",
+    "title": "Disco Forever",
+    "artist": "Studio 54 Allstars"
+  },
+  {
+    "id": 42,
+    "file": "/img/albums/42.jpg",
+    "slug": "shoegaze-dreams",
+    "title": "Shoegaze Dreams",
+    "artist": "My Bloody Valentines"
+  },
+  {
+    "id": 43,
+    "file": "/img/albums/43.jpg",
+    "slug": "surf-ride",
+    "title": "Surf Ride",
+    "artist": "The Beachcombers"
+  },
+  {
+    "id": 44,
+    "file": "/img/albums/44.jpg",
+    "slug": "dubai-nights",
+    "title": "Dubai Nights",
+    "artist": "Desert Electronica"
+  }
+]

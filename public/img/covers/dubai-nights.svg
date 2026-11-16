@@ -10,6 +10,6 @@
       </g>
       <circle cx="274.23212226480246" cy="382.1148681733757" r="50.136370805092156" fill="#073b4c"/>
     <rect x="0" y="0" width="600" height="600" fill="none" stroke="rgba(245,239,228,0.25)" stroke-width="3"/>
-    <text x="300" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="35.833333333333336" fill="#f5efe4" letter-spacing="1">DUBAI NIGHTS</text>
-      <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">DESERT ELECTRONICA</text>
+    <text x="300" y="300.0" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="35.0" fill="#f5efe4" letter-spacing="1">DUBAI NIGHTS</text>
+      <text x="300" y="329.8" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">DESERT ELECTRONICA</text>
   </svg>

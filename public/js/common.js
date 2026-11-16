@@ -44,7 +44,7 @@ function albumCard(a) {
     <article class="album-card" data-slug="${esc(a.slug)}">
       <a href="product.html?slug=${encodeURIComponent(a.slug)}" class="album-media">
         <span class="album-badges">${statusBadge(a)}</span>
-        <img class="cover" src="${esc(a.cover)}" alt="${esc(a.title)} — ${esc(a.artist)}" loading="lazy">
+        <img class="cover" src="${esc(a.cover)}" alt="${esc(a.title)} — ${esc(a.artist)}" loading="lazy" onerror="this.onerror=null;this.src='/img/covers/${a.slug}.svg'">
         <span class="album-disc"></span>
       </a>
       <div class="album-info">
@@ -182,7 +182,7 @@ async function renderCartItems() {
     total += album.price * quantity;
     return `
       <div class="cart-item">
-        <img src="${esc(album.cover)}" alt="${esc(album.title)}">
+        <img src="${esc(album.cover)}" alt="${esc(album.title)}" onerror="this.onerror=null;this.src='/img/covers/${album.slug}.svg'">
         <div>
           <div class="cart-item-title">${esc(album.title)}</div>
           <div class="cart-item-artist">${esc(album.artist)}</div>

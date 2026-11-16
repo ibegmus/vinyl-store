@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+const sharp = require('sharp');
 const { genres, categories, albums } = require('../src/seed-data');
 
 const outDir = path.join(__dirname, '..', 'public', 'img', 'covers');
+const albumDir = path.join(__dirname, '..', 'public', 'img', 'albums');
 
 function hash(str) {
   let h = 2166136261;
@@ -41,21 +43,28 @@ function esc(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-function textBlock(title, artist, fontScale) {
+function textBlock(title, artist) {
   const words = title.split(' ');
   const lines = [];
   let line = '';
   for (const w of words) {
     const test = line ? line + ' ' + w : w;
-    if (test.length > 14 && line) { lines.push(line); line = w; } else { line = test; }
+    if (test.length > 13 && line) { lines.push(line); line = w; } else { line = test; }
   }
   if (line) lines.push(line);
-  let y = 300 - (lines.length - 1) * 26;
-  const out = lines.map(l =>
-    `<text x="300" y="${y}" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="${Math.min(54, 430 / Math.max(...lines.map(x => x.length)))}" fill="#f5efe4" letter-spacing="1">${esc(l.toUpperCase())}</text>`
-  ).join('\n      ');
-  return `${out}
-      <text x="300" y="${y + 44}" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">${esc(artist.toUpperCase())}</text>`;
+  const maxLen = Math.max(...lines.map(l => l.length));
+  const fs = Math.min(52, 420 / maxLen);
+  const step = fs * 1.02;
+  let y = 300 - ((lines.length - 1) * step) / 2;
+  const parts = [];
+  for (const l of lines) {
+    parts.push(`<text x="300" y="${y.toFixed(1)}" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="${fs.toFixed(1)}" fill="#f5efe4" letter-spacing="1">${esc(l.toUpperCase())}</text>`);
+    y += step;
+  }
+  const lastY = y - step;
+  const artistY = (lastY + fs * 0.85).toFixed(1);
+  return `${parts.join('\n      ')}
+      <text x="300" y="${artistY}" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#f5efe4" opacity="0.85" letter-spacing="4">${esc(artist.toUpperCase())}</text>`;
 }
 
 function pattern(kind, rand, c1, c2, accent) {
@@ -166,9 +175,26 @@ for (const c of categories) {
   fs.writeFileSync(path.join(outDir, `cat-${c.slug}.svg`), coverSVG(c.name, c.tagline, palette[0], palette[1], 'cat-' + c.slug));
 }
 
-for (const a of albums) {
-  const g = genres.find(x => x.slug === a.genre) || genres[0];
-  fs.writeFileSync(path.join(outDir, `${a.slug}.svg`), coverSVG(a.title, a.artist, g.palette[0], g.palette[1], a.slug));
+async function buildPlaceholders() {
+  fs.mkdirSync(albumDir, { recursive: true });
+  const manifest = [];
+  for (let i = 0; i < albums.length; i++) {
+    const a = albums[i];
+    const g = genres.find(x => x.slug === a.genre) || genres[0];
+    const svg = coverSVG(a.title, a.artist, g.palette[0], g.palette[1], a.slug);
+    fs.writeFileSync(path.join(outDir, `${a.slug}.svg`), svg);
+    const id = i + 1;
+    await sharp(Buffer.from(svg))
+      .resize(600, 600)
+      .flatten()
+      .jpeg({ quality: 88 })
+      .toFile(path.join(albumDir, `${id}.jpg`));
+    manifest.push({ id, file: `/img/albums/${id}.jpg`, slug: a.slug, title: a.title, artist: a.artist });
+  }
+  fs.writeFileSync(path.join(albumDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  return manifest.length;
 }
 
-console.log(`Covers generated: ${genres.length + categories.length + albums.length}`);
+buildPlaceholders().then(n => {
+  console.log(`Covers generated: ${genres.length + categories.length + albums.length} svg, ${n} jpg placeholders`);
+});

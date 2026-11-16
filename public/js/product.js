@@ -15,7 +15,7 @@ function renderProduct(a) {
   document.getElementById('productLayout').innerHTML = `
     <div class="product-media">
       <span class="album-badges">${statusBadge(a)}</span>
-      <img src="${esc(a.cover)}" alt="${esc(a.title)} — ${esc(a.artist)}">
+      <img src="${esc(a.cover)}" alt="${esc(a.title)} — ${esc(a.artist)}" onerror="this.onerror=null;this.src='/img/covers/${a.slug}.svg'">
     </div>
     <div class="product-info">
       <a href="catalog.html?genre=${encodeURIComponent(a.genreSlug)}" style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)">${esc(a.genre || 'Разное')}</a>
