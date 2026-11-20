@@ -3,7 +3,7 @@ const path = require('path');
 const db = require('./src/db');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json({ limit: '256kb' }));
 app.use(express.urlencoded({ extended: true }));

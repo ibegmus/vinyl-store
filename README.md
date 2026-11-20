@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-Сайт будет доступен по адресу http://localhost:3000
+Сайт будет доступен по адресу http://localhost:3001
 
 ## Стек
 
